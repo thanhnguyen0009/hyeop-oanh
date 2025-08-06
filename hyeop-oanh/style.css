@@ -395,7 +395,7 @@
     justify-content: center;
     text-align: center;
     color: var(--primary-color);
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .box-dot{
@@ -447,7 +447,7 @@
 }
 
 .lb-dot2{
-    font-family: var(--font-uvn);
+    font-family: var(--font-mtd);
     font-size: 1em;
 }
 .lb1-box1{
