@@ -409,6 +409,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+    margin-bottom: 20px;
 }
 
 .img-p11{
@@ -423,22 +424,23 @@
 
 .lb1-dot{
     font-family: var(--font-mtd);
-    font-size: 1.5em;
+    font-size: 1.1em;
     padding: 20px 0 10px;
 }
 
 .lb1-box{
     font-family: var(--font-ftv);
-    font-size: 2.2em;
+    font-size: 1.8em;
     color: var(--primary-color);
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-transform: uppercase;
 }
 
 .lb11-box{
     font-family: var(--font-mtd);
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-size: 1em;
+    /* margin-top: 10px; */
+    margin: 5px 0;
 }
 
 .img-boxp1{
@@ -448,17 +450,17 @@
 
 .lb-dot2{
     font-family: var(--font-mtd);
-    font-size: 1em;
+    font-size: .8em;
 }
 .lb1-box1{
     font-family: var(--font-gotham);
-    font-size: .55em;
+    font-size: .45em;
     margin-top: 5px;
 }
 
 .lb2-box1{
     font-family: var(--font-gotham);
-    font-size: .5em;
+    font-size: .4em;
     margin-top: 5px;
 }
 
@@ -469,7 +471,7 @@
 .btn-box {
     width: 170px;
     font-family: var(--font-gotham);
-    font-size: .45em;
+    font-size: .4em;
     color: var(--primary-color);
     font-weight: bold;
     border: 2px solid var(--primary-color);
@@ -526,8 +528,9 @@
 
 .dot-p1{
     font-family: var(--font-mtd);
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .img3-p1{
@@ -537,26 +540,26 @@
 
 .lb1-p1{
     font-family: var(--font-gotham);
-    font-size: .6em;
+    font-size: .5em;
     color: #111;
     margin-top: 50px;
 }
 
 .lb2-p1{
     font-family: var(--font-mtd);
-    font-size: 1.3em;
+    font-size: 1em;
     margin-top: 70px;
 }
 
 .lb3-p1{
     font-family: var(--font-gotham);
-    font-size: .6em;
+    font-size: .5em;
     color: #111;
 }
 
 .lb4-p1{
     font-family: var(--font-ftv);
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-top: 15px;
 }
 
@@ -612,7 +615,7 @@ li span {
 /* ================P2================= */
 .lb1-p2{
     font-family: var(--font-ftv);
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-transform: uppercase;
     margin-top: 100px;
 }
@@ -633,7 +636,7 @@ li span {
 .btn-map{
     font-family: var(--font-gotham);
     text-decoration: none;
-    font-size: .7em;
+    font-size: .5em;
     color: #fff;
     font-weight: bolder;
     background: var(--primary-color);
@@ -755,7 +758,7 @@ form{
 
 .lb-til{
     font-family: var(--font-gotham);
-    font-size: .6em;
+    font-size: .5em;
     margin-bottom: 10px;
 }
 
@@ -824,7 +827,7 @@ background-color: var(--primary-color);
 .til-check{
   /* margin: 0 auto; */
   font-style: normal;
-  font-size: .7em;
+  font-size: .55em;
   font-weight: 300;
   }
   
@@ -919,7 +922,7 @@ input::placeholder, textarea::placeholder{
 }
 .xacnhan{
     height: 30px;
-    font-size: 15px;
+    font-size: .7em;
     background: var(--primary-color);
     color: #fff;
     margin: 20px 10px;
@@ -959,7 +962,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .lb-end1{
-    font-size: .55em;
+    font-size: .5em;
     color: #111;
     line-height: 20px;
     margin-top: 20px;
@@ -976,17 +979,17 @@ input::placeholder, textarea::placeholder{
 }
 
 .img-end2{
-    width: 80%;
+    width: 70%;
     margin-top: 30px;
 }
 
 .p-end{
     text-transform: uppercase;
-    font-size: .55em;
+    font-size: .5em;
     color: #111;
     padding: 0 20px;
     text-align: justify;
-    padding: 0 50px;
+    padding: 0 20px;
     line-height: 17px;
     margin: 20px 0 40px;
     font-style: italic;
@@ -1158,17 +1161,14 @@ input::placeholder, textarea::placeholder{
         margin-left: -15px;
         
     }
-    .imge{
-        width: 40%;
-    }
-    .in-fe{
-        font-size: .5em;
-    }
-    .lb-line1, .lb-name{
-        font-size: 2.7em;
+    .form{
+        padding:  0 30px;
     }
     .kinhmoi{
         font-size: .6em;
+    }
+    .inp-ten{
+        width: 90%;
     }
     textarea {
         width: 90%;
