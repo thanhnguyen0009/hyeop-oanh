@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thông tin Open Graph cho ảnh đại diện -->
+    <meta property="og:image" content="https://yenstudio.com.vn/ching-hong.jpg" />
+    <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+    <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+
+    <!-- Các thông tin khác cho Open Graph -->
+    <meta property="og:title" content="張子卿 - 阮玫虹" />
+    <meta property="og:description" content="張子卿 - 阮玫虹" />
+    <meta property="og:url" content="https://yenstudio.com.vn/chang-hong/chinese.html" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./chang-hong/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>張子卿 - 阮玫虹</title>
+</head>
+<body>
+    <div id="loading-container" class="loading-container">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <div class="container-wrapper">
+            <!-- <div class="box-circle">
+                <div class="circle" id="musicCircle">
+                    <img src="./chang-hong/anh/cd.png" alt="Music Icon" class="circle-image">
+                    <audio id="audio" src="./chang-hong/audio/lana-del-rey-video-games-128-ytshorts.savetube.me.mp3" loop></audio>
+                </div>
+                <label for="audio" class="lb-circle">No Music? <br> Click Me</label>
+            </div> -->
+
+            <div class="box-top">
+                <div class="box-contop">
+                    <img src="./chang-hong/anh/h-c-02.png" alt="" class="img-top">
+                    <div class="box-dot">
+                            <label for="" class="dot"><i class="fa-solid fa-circle"></i></label>
+                            <label for="" class="lb-top">Always and forever</label>
+                        <label for="" class="dot"><i class="fa-solid fa-circle"></i></label>
+                    </div>
+                    <label for="" class="lb-top2">WELCOME TO OUR WEDDING</label>
+                    <label for="" class="lb-top3">張子卿和阮玫虹</label>
+                </div>    
+            </div>     
+
+            <div class="info">
+                <!-- <div class="parents">
+                    <label for="" class="lb-parents">NHÀ TRAI: Ông Dương Công Trường và Bà Nguyễn Thị Tuyết</label>
+                    <label for="" class="lb-parents">NHÀ GÁI: Ông Nguyễn Tấn Toàn</label>
+                </div> -->
+
+                <div class="box-flow">
+                    <img src="./chang-hong/anh/flower1-03.png" alt="" class="img-flow">
+                </div>
+
+                <div class="inv">
+                    <label for="" class="kinhmoi">誠摯邀請您撥冗參加我們的結婚典禮</label>
+                    <img src="./chang-hong/anh/4.webp" alt="" class="img-inv">
+                    <label for="" class="lb-inv">張子卿 & 阮玫虹</label>
+                </div>
+
+                <div class="time-add">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <label for="" class="lb-time">2025年10月25日下午三點</label>
+                    <label for="" class="lb-add" blank>Beach Paradise Bay</label>
+                </div>
+
+                <div class="box-map">
+                    
+                    <label for="" class="add2">Beach Paradise Bay, Ngoc Chau, Tuan Chau, Ha Long</label>
+                    <a href="https://maps.app.goo.gl/L1qQbqHxjRKBj4TD6" class="maps" target="_blank">查看地圖</a>
+                </div>
+            </div>
+
+
+              <div class="box-calendar">
+                <div class="calendar">
+                    <img src="./chang-hong/anh/flower1-03.png" alt="" class="img-car1">
+                    <label for="" class="lb-car">Save our Date</label>
+                    <img src="./chang-hong/anh/cal-en-04.png" alt="" class="img-car2">
+                </div>
+                <div class="container-count">
+                <!-- <h1 id="header">Đếm ngược thời gian</h1> -->
+                  <div id="countdown">
+                    <ul class="countdown-list" id="countdown-list">
+                        <li class="list-count"><span id="months"></span>MONTHS</li>
+                        <li class="list-count"><span id="days"></span>DAYS</li>
+                        <li class="list-count"><span id="hours"></span>HOURS</li>
+                        <li class="list-count"><span id="minutes"></span>MINUTES</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="box-timeline">
+                <div class="timeline-top">
+                    <label for="" class="lb-timeline1">Timeline</label>
+                    <label for="" class="lb-timeline2">請關注婚禮流程安排以便更方便參加哦！</label>
+                </div>
+
+                <div class="box-icontime">
+                    <div class="timeline">
+                        <img src="./chang-hong/anh/icon1-03.png" alt="" class="img-timeline">
+                        <label for="" class="lb-timeline"><strong>15:00  |</strong>  迎賓</label>
+                    </div>
+                    <div class="timeline">
+                        <img src="./chang-hong/anh/icon2-03.png" alt="" class="img-timeline">
+                        <label for="" class="lb-timeline"><strong>16:00  |</strong>  證婚儀式</label>
+                    </div>
+                    <div class="timeline">
+                        <img src="./chang-hong/anh/icon3-03.png" alt="" class="img-timeline">
+                        <label for="" class="lb-timeline"><strong>17:30  |</strong>  入席</label>
+                    </div>
+                    <div class="timeline">
+                        <img src="./chang-hong/anh/icon4-03.png" alt="" class="img-timeline">
+                        <label for="" class="lb-timeline"><strong>18:00  |</strong>  晚宴</label>
+                    </div>
+                    <div class="timeline">
+                        <img src="./chang-hong/anh/icon5-03.png" alt="" class="img-timeline">
+                        <label for="" class="lb-timeline"><strong>19:30  |</strong>  派對開始</label>
+                    </div>
+                     <div class="timeline">
+                        <img src="./chang-hong/anh/icon6-02.png" alt="" class="img-timeline">
+                        <label for="" class="lb-timeline"><strong>20:00  |</strong>  舞宴</label>
+                    </div>
+                     <div class="timeline">
+                        <img src="./chang-hong/anh/icon7-02.png" alt="" class="img-timeline">
+                        <label for="" class="lb-timeline"><strong>21:00  |</strong>  捧花儀式</label>
+                    </div>
+                     <div class="timeline">
+                        <img src="./chang-hong/anh/icon8-02.png" alt="" class="img-timeline">
+                        <label for="" class="lb-timeline"><strong>21:30  |</strong>  送客</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-dresscode">
+                <div class="dress-top">
+                    <label for="" class="lb-dress1">Dresscode</label>
+                    <label for="" class="lb-dress2">建議賓客穿著我們建議顏色的服裝您的參與我們會很開心^_^</label>
+                </div>
+
+                <div class="box-dresscon">
+                    <div class="dress-con">
+                        <div class="item-color1"></div>
+                        <div class="item-color2"></div>
+                        <div class="item-color3"></div>
+                        <div class="item-color4"></div>
+                        <div class="item-color5"></div>
+                        <div class="item-color6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-image1">
+                <!-- <img src="./chang-hong/anh/2.webp" alt="" class="img1"> -->
+                <img src="./chang-hong/anh/5.webp" alt="" class="img2">
+            </div>
+
+            <div class="box-flow">
+                <img src="./chang-hong/anh/flower2-03.png" alt="" class="img-flow2">
+            </div>
+
+
+               <!-- Slider container -->
+              <div class="slider">
+                <div class="slide">
+                    <img src="./chang-hong/anh/8.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./chang-hong/anh/9.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./chang-hong/anh/10.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./chang-hong/anh/2.webp" alt="" />
+                </div>
+                <div class="slide">
+                <img src="./chang-hong/anh/3.webp" alt="" />
+                </div>
+                <!-- <div class="slide">
+                    <img src="./chang-hong/anh/4.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./chang-hong/anh/5.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./chang-hong/anh/6.webp" alt="" />
+                </div> -->
+                <div class="slide">
+                    <img src="./chang-hong/anh/7.webp" alt="" />
+                </div>
+             
+
+                <button class="btn btn-next"><i class="fa-solid fa-caret-right"></i></button>
+                <button class="btn btn-prev"><i class="fa-solid fa-caret-left"></i></button>
+            </div>
+
+            <div id="box-end-acc">
+                <div class="end-acc">
+                <img src="./chang-hong/anh/flower2-03.png" alt="" class="img-flow2">
+                    <label for="" class="lb-end1-acc">recommendations</label>
+                    <label for="" class="lb-end2-acc">Travel Suggestions for Your Trip to Vietnam</label>
+                </div>
+
+                <div class="accordion-container">
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">💌 A Warm Welcome from Mai Hồng & Tzu Ching</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="box-acc">
+                                <!-- <a href="https://maps.app.goo.gl/8FuTcUq1kHEdTLTx6" class="btn-acc" target="_blank">Independence Palace</a> -->
+
+                                <p class="p-acc">親愛的家人和朋友們：<br>
+                                我們無比興奮能在今年十月於越南下龍，和大家一同慶祝我們的婚禮。你們願意長途跋涉前來，對我們而言意義非凡——不僅是為了見證我們的重要時刻，也能體驗這片我們深愛的土地之美、文化與溫暖。<br>
+                                我們希望你們的旅程充滿美好回憶、新奇冒險，並能在旅途中找到片刻的寧靜。無論是漫步於熱鬧的河內街頭、乘船穿梭於下龍灣靜謐的石灰岩山水之間，還是在寧平的稻田間啜飲一杯咖啡——越南總有一種魔力，能長久停留在你的心裡。<br>
+                                我們迫不及待想見到你們、擁抱你們，並在星空下舉杯同慶。<br>
+                                如果你們在婚禮前後有幾天時間可供探索，以下是我們最喜愛的越北旅遊地點推薦。<br>
+                                愛你們的 <br>
+                                玫虹 & 子卿
+                                </p>
+                               
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">🌆 河內 – 文化之都</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="box-acc">
+                                <!-- <a href="https://maps.app.goo.gl/8FuTcUq1kHEdTLTx6" class="btn-acc" target="_blank">Independence Palace</a> -->
+
+                                <label for="" class="lb-acc">必訪景點與活動</label>
+                                <ul>
+                                    <li class="list-acc">漫步還劍湖畔，探索熱鬧的舊城區</li>
+                                    <li class="list-acc">參觀文廟與胡志明陵寢</li>
+                                    <li class="list-acc">欣賞傳統水上木偶戲，或品嚐當地特色蛋咖啡</li>
+                                    <li class="list-acc">購買絲綢、漆器及手工禮品</li>
+                                </ul>
+
+                                 <label for="" class="lb-acc">住宿推薦</label>
+                                <ul>
+                                    <li class="list-acc">Lotte Hotel Hanoi（約 120–150 美元/晚）</li>
+                                    <li class="list-acc">La Siesta Hotel & Spa（約 70–100 美元/晚）</li>
+                                    <li class="list-acc">Scent Premium Hotel（約 40–60 美元/晚）</li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">🌿 寧平 – 自然與心靈之旅</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="box-acc">
+                                  <label for="" class="lb-acc">必體驗活動</label>
+                                <ul>
+                                    <li class="list-acc">乘船遊覽長安或三谷洞穴水道</li>
+                                    <li class="list-acc">攀登舞洞觀景台，俯瞰壯麗山水</li>
+                                    <li class="list-acc">參觀拜頂寺及古都華閭</li>
+                                    <li class="list-acc">騎行穿越金黃稻田間的小路</li>
+                                </ul>
+
+                                 <label for="" class="lb-acc">住宿推薦</label>
+                                <ul>
+                                    <li class="list-acc">Tam Coc Garden Resort（約 100–120 美元/晚</li>
+                                    <li class="list-acc">Ninh Binh Hidden Charm（約 70–90 美元/晚）</li>
+                                    <li class="list-acc">Lalita Boutique Hotel（約 40–60 美元/晚）</li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">🌊 下龍 – 海岸之美 & 婚禮地點</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="box-acc">
+                               <label for="" class="lb-acc">必做活動</label>
+                                <ul>
+                                    <li class="list-acc">乘坐一日或過夜遊船，暢遊下龍灣</li>
+                                    <li class="list-acc">在屯洲島悠閒放鬆</li>
+                                    <li class="list-acc">參觀太陽世界主題樂園</li>
+                                    <li class="list-acc">在海灘享用新鮮海鮮盛宴</li>
+                                </ul>
+
+                                 <label for="" class="lb-acc">住宿推薦</label>
+                                <ul>
+                                    <li class="list-acc">Vinpearl Resort & Spa（約 120–160 美元/晚）</li>
+                                    <li class="list-acc">Paradise Suites Hotel（約 70–90 美元/晚）</li>
+                                    <li class="list-acc">D’Lioro Hotel（約 50–70 美元/晚</li>
+                                    <li class="list-acc">詢問 ChatGPT</li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">🍜 海防 – 美食天堂</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="box-acc">
+                              <label for="" class="lb-acc">必嚐美食</label>
+                                <ul>
+                                    <li class="list-acc">蟹湯米粉</li>
+                                    <li class="list-acc">海鮮蟹肉春捲</li>
+                                    <li class="list-acc">辣味法國麵包</li>
+                                    <li class="list-acc">椰香甜品</li>
+                                </ul>
+
+                                 <label for="" class="lb-acc">小貼士</label>
+                                <ul>
+                                    <li class="list-acc">從下龍出發的一日美食小旅行絕佳選擇</li>
+                                    <li class="list-acc">探索熱鬧的勒長街（Lạch Tray）或吉帶街（Cát Dài）</li>
+                                    <li class="list-acc">參加在地街頭美食之旅（可向飯店詢問或線上預訂）</li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">✈️ 旅遊小貼士</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="box-acc">
+                                <ul>
+                                    <li class="list-acc"><strong>貨幣：</strong>1 美元 ≈ 25,000 越南盾</li>
+                                    <li class="list-acc"><strong>交通：</strong>可搭乘 Grab、計程車或飯店專車</li>
+                                    <li class="list-acc"><strong>網路：</strong>可購買當地 SIM 卡或使用 eSIM</li>
+                                    <li class="list-acc"><strong>語言：</strong>觀光區多能使用英語溝通</li>
+                                    <li class="list-acc"><strong>氣候：</strong>十月氣溫約 20–28°C，天氣宜人</li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                     <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">💅 在地享受 – 美甲 & 水療</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="box-acc">
+                                <ul>
+                                    <li class="list-acc">手足護理：5–10 美元</li>
+                                    <li class="list-acc">按摩：15–40 美元</li>
+                                    <li class="list-acc">全套水療療程：20–70 美元</li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         
+            <form action="" name="ching-hong-2">
+                <div class="box-flow">
+                    <img src="./chang-hong/anh/flower3-03.png" alt="" class="img-flow3">
+                </div>
+                <div class="feed-info">
+                    <lable class="lb-form1">確認出席</lable>
+                    <label for="" class="lb-dot"><i class="fa-solid fa-diamond"></i></label>
+                    <label for="" class="in-fe">請在10月1日前確認人數,以便我們最好完全的準備</label>
+                </div>
+                <div class="box-label">
+                    <label for="" class="lb-text">您會參加新娘和新郎的婚禮嗎？</label>
+                </div>
+                <div class="container-check">
+                    <input class="box-feed" type="radio" value="參加" id="yes" name="確認">
+                    <label class="check-box" for="yes">
+                        <h3 class="til-check">參加</h3>
+                    </label>
+                    <input class="box-feed" type="radio" value="不參加" id="no" name="確認">
+                    <label class="check-box" for="no"> 
+                        <h3 class="til-check">不參加</h3>
+                    </label>
+                </div>
+                
+                <div class="box-ten">
+                    <input required class="inp-ten" type="text"  name="您的名字" placeholder="您的名字">
+                    <input required class="inp-ten" type="text" name="人數" placeholder="人數" maxlength="1" title="請輸入一位數字" pattern="\d" />
+
+                </div>
+
+                <div class="box-label">
+                    <label for="" class="lb-text">問你是吃素還是吃葷？</label>
+                </div>
+                 <div class="box-ten">
+                    <input required class="inp-ten" type="text"  name="食物注意事項" placeholder="">
+                </div>
+                <!-- <div class="container-check">
+                    <input class="box-feed" type="radio" value="葷" id="yfood" name="食物注意事項">
+                    <label class="check-box" for="yfood">
+                        <h3 class="til-check">葷</h3>
+                    </label>
+                    <input class="box-feed" type="radio" value="素" id="nfood" name="食物注意事項">
+                    <label class="check-box" for="nfood"> 
+                        <h3 class="til-check">素</h3>
+                    </label>
+                </div> -->
+                <div class="box-ten">
+                    <textarea id="loi-chuc" name="希望" rows="4" cols="50" placeholder="有甚麼想對新娘新郎說的"></textarea>
+                </div>
+                <div class="wrapper">
+                    <button class="xacnhan" type="submit">確認</button>
+                </div>
+            </form>
+           
+            <div class="box-end">
+                <label for="" class="lb-end">您的到來是我們最大的幸福。婚禮上見！</label>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script>
+        window.onload = function() {
+    // Lấy tất cả các phần tử cho các hiệu ứng fade-down, fade-up, fade-right, fade-left, zoom-in
+    const fadeDownElements = document.querySelectorAll('.kinhmoi, .lb-inv');  // Các phần tử fade-down
+    const fadeUpElements = document.querySelectorAll('.lb-time, .lb-add, .timeline, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chuc');    // Các phần tử fade-up
+    const fadeRightElements = document.querySelectorAll('.box-nu, .img1');                               // Các phần tử fade-right
+    const fadeLeftElements = document.querySelectorAll('.box-nam, .img2');                                // Các phần tử fade-left
+    const zoomInElements = document.querySelectorAll('.timeline-top, .lb-dress1, .lb-dress2, .xacnhan');                // Các phần tử zoom-in
+
+    // Cấu hình của IntersectionObserver
+    const options = {
+        root: null, // Theo mặc định là viewport
+        threshold: 0.5 // Kích hoạt khi 50% phần tử hiển thị trong viewport
+    };
+
+    // Tạo đối tượng IntersectionObserver để theo dõi sự xuất hiện và mất đi của phần tử
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Nếu phần tử xuất hiện trong viewport, thêm lớp "visible"
+                entry.target.classList.add('visible');
+            } else {
+                // Nếu phần tử không còn trong viewport, xóa lớp "visible"
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, options);
+
+    // Quan sát các phần tử theo từng hiệu ứng
+    fadeDownElements.forEach(element => observer.observe(element));
+    fadeUpElements.forEach(element => observer.observe(element));
+    fadeRightElements.forEach(element => observer.observe(element));
+    fadeLeftElements.forEach(element => observer.observe(element));
+    zoomInElements.forEach(element => observer.observe(element));
+};
+
+    </script>
+    <script>
+      const main = () => {
+            const minute = 1000 * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+            const month = day * 30.42; // Average days per month
+
+            // Event date set to October 25, 2025, 00:00:00
+            const EVENTDATE = new Date('October 25, 2025, 00:00:00');
+
+            const countDown = new Date(EVENTDATE).getTime();
+            const x = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = countDown - now;
+
+                if (distance <= 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown-list").style.display = "none";
+                    return;
+                }
+
+                // Add leading zeros for single-digit numbers
+                const months = Math.floor(distance / month).toString().padStart(2, '0');
+                const days = Math.floor((distance % month) / day).toString().padStart(2, '0');
+                const hours = Math.floor((distance % day) / hour).toString().padStart(2, '0');
+                const minutes = Math.floor((distance % hour) / minute).toString().padStart(2, '0');
+
+                document.getElementById("months").innerText = months;
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+            }, 1000); // Update every second
+        }
+
+        main();
+    </script>
+      <script>
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            const isActive = content.classList.contains('active');
+
+            // Close all other items
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.accordion-header').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                content.classList.add('active');
+                header.classList.add('active');
+            }
+        });
+    });
+</script>
+<script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbwtSAHeVOLAv7kJyOjOlPIWRvdSWG62JTiZZinHlGcfLsZOPkhkR-fI67AGSfPRDw/exec';
+        const form = document.forms['ching-hong-2'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault(); // Ngừng việc gửi form mặc định
+
+            document.getElementById('loading-container').style.display = 'flex';
+
+            // Gửi dữ liệu form đi
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu dữ liệu gửi thành công, làm mới lại form
+                        form.reset(); // Làm mới lại form
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            icon: 'success',
+                            title: '成功',
+                            text: '感谢您的反馈，信息已发送给新娘和新郎',
+                            imageWidth: 300,
+                            imageHeight: 200,
+                            confirmButtonText: '關閉',
+                            background: '#f8f8f8',
+                            padding: '20px',
+                            customClass: {
+                                popup: 'custom-popup',
+                                title: 'custom-title',
+                                confirmButton: 'custom-confirm-button'
+                            },
+                            didOpen: () => {
+                                document.querySelector('.swal2-popup').style.borderRadius = '10px'; // Bo tròn các góc
+                            }
+                        });
+                    } else {
+                        // Nếu gặp lỗi khi gửi dữ liệu
+                        console.error('Error!', response);
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            title: 'Oops!',
+                            text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                })
+                .catch(error => {
+                    // Xử lý lỗi nếu có
+                    console.error('Error!', error.message);
+
+                    document.getElementById('loading-container').style.display = 'none';
+
+                    Swal.fire({
+                        title: 'Oops!',
+                        text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                });
+        });
+</script>
+<script>
+    "use strict";
+     // Select all slides
+     const slides = document.querySelectorAll(".slide");
+
+     // Loop through slides và thiết lập translateX cho mỗi slide
+     slides.forEach((slide, indx) => {
+     slide.style.transform = `translateX(${indx * 100}%)`;
+     });
+
+     // Chọn nút next và prev
+     const nextSlide = document.querySelector(".btn-next");
+     const prevSlide = document.querySelector(".btn-prev");
+
+     // Biến đếm số slide hiện tại và tối đa
+     let curSlide = 0;
+     let maxSlide = slides.length - 1;
+
+     // Thêm sự kiện cho nút tiếp theo
+     nextSlide.addEventListener("click", function () {
+     // Nếu hiện tại là slide cuối, quay lại đầu tiên
+     if (curSlide === maxSlide) {
+         curSlide = 0;
+     } else {
+         curSlide++;
+     }
+
+     // Di chuyển tất cả các slide
+     slides.forEach((slide, indx) => {
+         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+     });
+     });
+
+     // Thêm sự kiện cho nút quay lại
+     prevSlide.addEventListener("click", function () {
+     // Nếu hiện tại là slide đầu tiên, quay lại cuối cùng
+     if (curSlide === 0) {
+         curSlide = maxSlide;
+     } else {
+         curSlide--;
+     }
+
+     // Di chuyển tất cả các slide
+     slides.forEach((slide, indx) => {
+         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+     });
+     });
+
+  </script>
+   <script>
+const musicCircle = document.getElementById("musicCircle");
+const audio = document.getElementById("audio");
+const videoIframe = document.getElementById("video");
+
+// Thêm sự kiện khi nhấn vào vòng tròn
+musicCircle.addEventListener("click", toggleMusic);
+
+// Hàm điều khiển việc phát hoặc tạm dừng nhạc
+function toggleMusic() {
+    if (audio.paused) {
+        audio.play(); // Phát nhạc
+        musicCircle.classList.add("spin"); // Bắt đầu xoay
+    } else {
+        audio.pause(); // Dừng nhạc
+        musicCircle.classList.remove("spin"); // Dừng xoay
+    }
+}
+
+// Tạo đối tượng YouTube Player API
+let player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video', {
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+// Lắng nghe sự kiện trạng thái của video
+function onPlayerStateChange(event) {
+    // Khi video bắt đầu phát (state = 1), dừng nhạc và dừng xoay vòng tròn
+    if (event.data === YT.PlayerState.PLAYING) {
+        if (!audio.paused) {
+            audio.pause(); // Dừng nhạc
+            musicCircle.classList.remove("spin"); // Dừng xoay vòng tròn
+        }
+    }
+}
+
+// Tải API YouTube
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+</script>
+</body>
+</html>

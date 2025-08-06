@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thông tin Open Graph cho ảnh đại diện -->
+    <meta property="og:image" content="https://yenstudio.com.vn/hyeop-oanh.jpg" />
+    <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+    <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+
+    <!-- Các thông tin khác cho Open Graph -->
+    <meta property="og:title" content="HYEOP - OANH" />
+    <meta property="og:description" content="JEONG HYEOP -VU OANH" />
+    <meta property="og:url" content="https://yenstudio.com.vn/chang-hong/vietnam.html" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./hyeop-oanh/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>김정협 - 부 오아잉</title>
+</head>
+<body>
+    <div id="loading-container" class="loading-container">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="box-circle">
+                <div class="circle" id="musicCircle">
+                    <img src="././hyeop-oanh/anh/cd.png" alt="Music Icon" class="circle-image">
+                    <audio id="audio" src="./hyeop-oanh/audio/[Vietsub] Love, Maybe (사랑인가 봐) - ♪ Melomance (멜로망스)  A Business Proposal OST - ICLS Danang.mp3" loop></audio>
+                </div>
+                <label for="audio" class="lb-circle">No Music? <br> Click Me</label>
+            </div>
+        <div class="box-top">
+            <img src="./hyeop-oanh/anh/flow1-08.png" alt="" class="img1-p1">
+            <img src="./hyeop-oanh/anh/h-o-08.png" alt="" class="img2-p1">
+            <div class="box-dot">
+                    <i class="fa-solid fa-circle"></i>
+                    <label for="" class="dot-p1">Always and forever</label>
+                    <i class="fa-solid fa-circle"></i>
+            </div>
+             <label for="" class="lb1-box">김정협</label>
+            <label for="" class="lb11-box">&</label>
+            <label for="" class="lb1-box">부 오아잉</label>
+            <img src="./hyeop-oanh/anh/flow2-08.png" alt="" class="img3-p1">
+            <label for="" class="lb1-p1">신랑 측: 김선호 님, 조금순 님 <br>
+                                    신부 측: 부반본 님, 도티라잉 님</label>
+            <label for="" class="lb2-p1"></label>
+            <label for="" class="lb3-p1">신랑과 신부의 결혼식에 귀한 걸음을 하시어 함께 축복해 주시길 정중히 초대합니다.</label>
+            <label for="" class="lb4-p1">2025.11.01 (토요일) 오후 5:30 </label>
+            <div class="box-calendar">
+                <label for="" class="lb-cal">혁 & 오아잉의 웨딩 일정</label>
+                <img src="./hyeop-oanh/anh/cal-ko-08.png" alt="" class="img-cal">
+            </div>
+
+            <div class="container-coutdown">
+            <!-- <h1 id="header">COUNTDOWN TO EVENT</h1> -->
+            <div id="countdown">
+                <ul>
+                <li><span id="days"></span>날</li>
+                <li><span id="hours"></span>시간 </li>
+                <li><span id="minutes"></span>분 </li>
+                <li><span id="seconds"></span>초 </li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="box-p2">
+            <label for="" class="lb1-p2">SOFTWATER RESTAURANT</label>
+            <label for="" class="lb2-p2">베트남 하노이시 홍하동 안즈엉</label>
+            <img src="/hyeop-oanh/anh/map-08.png" alt="" class="img1-p2">
+            <a href="https://maps.app.goo.gl/dbRKPj37Kt4A6KUz8" class="btn-map" target="_blank">지도 보기</a>
+            <img src="./hyeop-oanh/anh/flow3-08.png" alt="" class="img2-p2">
+            <label for="" class="lb3-p2">TIMELINE</label>
+            <div class="box-timeline">
+                <div class="timeline-item">
+                    <label for="" class="lb-timeline1">17:00</label>
+                    <img src="./hyeop-oanh/anh/icon1-08.png" alt="" class="img-timeline">
+                    <label for="" class="lb-timeline2">하객 맞이</label>
+                </div>
+
+                <div class="timeline-item">
+                    <label for="" class="lb-timeline1">17:30</label>
+                    <img src="./hyeop-oanh/anh/icon2-08.png" alt="" class="img-timeline">
+                    <label for="" class="lb-timeline2">본식</label>
+                </div>
+
+                <div class="timeline-item">
+                    <label for="" class="lb-timeline1">18:00</label>
+                    <img src="./hyeop-oanh/anh/icon3-08.png" alt="" class="img-timeline">
+                    <label for="" class="lb-timeline2">피로연 시작</label>
+                </div>
+            </div>
+        </div>
+           
+
+         <div class="box-xacnhan-thamdu">
+            <div class="box-thamdu1">
+                <!-- <img src="./hyeop-oanh/anh/THAMDU-08.png" alt="" class="img-xntd1"> -->
+                 <label for="" class="lbb-thamdu">참석해 주실 수 있나요?</label>
+            </div>
+            <div class="box-thamdu2">
+                <img src="./hyeop-oanh/anh/flow4-08.png" alt="" class="img-xntd2">
+            </div>
+         </div>
+            <form action="" name="hyeop-oanh">
+               <div class="til-label">
+                    <label for="" class="lb-til">정성껏 준비할 수 있도록 참석 여부를 알려주세요!</label>
+               </div>
+                <div class="container-check">
+                    <input class="box-feed" type="radio" value="CÓ" id="yes" name="XÁC NHẬN">
+                    <label class="check-box" for="yes">
+                        <h3 class="til-check">꼭 갈게요</h3>
+                    </label>
+                    <input class="box-feed" type="radio" value="KHÔNG" id="no" name="XÁC NHẬN">
+                    <label class="check-box" for="no"> 
+                        <h3 class="til-check">아쉽지만 어려울 것 같아요</h3>
+                    </label>
+                </div>
+                
+                <div class="box-ten">
+                    <input required class="inp-ten" type="text"  name="TÊN" placeholder="성함">
+                    <input required class="inp-ten" type="text" name="SỐ KHÁCH MỜI ĐI KÈM" placeholder="동반 인원 수" maxlength="1" title="Vui lòng nhập đúng 1 chữ số" pattern="\d" />
+                    <input required class="inp-ten" type="tel" name="SĐT" placeholder="연락처" maxlength="11" pattern="[0-9]{10}" title="Nhập đúng 10 chữ số" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                    <textarea id="loi-chuc" name="LỜI CHÚC" rows="4" cols="70" placeholder="신랑 신부에게 전하고 싶은 메시지"></textarea>
+                </div>
+                <div class="wrapper">
+                    <button class="xacnhan" type="submit">확인하다</button>
+                </div>
+            </form>
+
+            <div class="box-end">
+                <img src="./hyeop-oanh/anh/h-o-08.png" alt="" class="img-end1">
+                <label for="" class="lb-end1">아래 QR 코드를 스캔하셔서 신랑 신부에게 축하의 마음을 전해 주세요!</label>
+                <a href="qr-korea.html" class="btn-end">QR 코드 보기</a>
+                <img src="./hyeop-oanh/anh/thank-08.png" alt="" class="img-end2">
+                <p class="p-end">귀하의 참석은 저희 가족에게 큰 영광입니다.
+                결혼식 날짜가 가까워져 계획에 변동이 생기실 경우, 필요시 이 웹사이트를 통해 정보를 업데이트해 주세요.<br> <br>
+
+                    예기치 못한 변경 사항이 생기면 아래 번호로 신랑 신부에게 직접 연락 부탁드립니다. <br><span class="blue"><strong>신부 - 0396335959; 신랑 - 0832857982</strong></span></p>
+            </div>
+           
+           
+        </div>
+    </div>
+    
+
+
+
+
+    <script>
+        window.onload = function() {
+    // Lấy tất cả các phần tử cho các hiệu ứng fade-down, fade-up, fade-right, fade-left, zoom-in
+    const fadeDownElements = document.querySelectorAll('.lb1-box, .lb2-p1, .lb3-p1, .lb4-p1, .lb1-p2, .lb2-p2, .box-timeline, .lb-til');  // Các phần tử fade-down
+    const fadeUpElements = document.querySelectorAll('.lb3-p2, .lb-add, .timeline, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chuc');    // Các phần tử fade-up
+    const fadeRightElements = document.querySelectorAll('.lb1-p1, .img1');                               // Các phần tử fade-right
+    const fadeLeftElements = document.querySelectorAll('.box-nam, .img2');                                // Các phần tử fade-left
+    const zoomInElements = document.querySelectorAll('.dot-p1, .lb11-box, .img1-p2, .xacnhan');                // Các phần tử zoom-in
+
+    // Cấu hình của IntersectionObserver
+    const options = {
+        root: null, // Theo mặc định là viewport
+        threshold: 0.5 // Kích hoạt khi 50% phần tử hiển thị trong viewport
+    };
+
+    // Tạo đối tượng IntersectionObserver để theo dõi sự xuất hiện và mất đi của phần tử
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Nếu phần tử xuất hiện trong viewport, thêm lớp "visible"
+                entry.target.classList.add('visible');
+            } else {
+                // Nếu phần tử không còn trong viewport, xóa lớp "visible"
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, options);
+
+    // Quan sát các phần tử theo từng hiệu ứng
+    fadeDownElements.forEach(element => observer.observe(element));
+    fadeUpElements.forEach(element => observer.observe(element));
+    fadeRightElements.forEach(element => observer.observe(element));
+    fadeLeftElements.forEach(element => observer.observe(element));
+    zoomInElements.forEach(element => observer.observe(element));
+};
+
+    </script>
+    <script>
+const main = () => {
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+      
+  const EVENTDATE = new Date('November 1, 2025, 19:00:00');
+ 
+  const countDown = new Date(EVENTDATE).getTime();
+  const x = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = countDown - now;
+
+        if (distance <= 0) {
+          clearInterval(x);
+          document.getElementById("days").innerText = 0;
+          document.getElementById("hours").innerText = 0;
+          document.getElementById("minutes").innerText = 0;
+          document.getElementById("seconds").innerText = 0;
+          return;
+        }
+
+        document.getElementById("days").innerText = Math.floor(distance / day);
+        document.getElementById("hours").innerText = Math.floor((distance % day) / hour);
+        document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
+        document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
+      }, 1000); // Updated delay to 1000ms for smoother updates
+}
+
+main();
+    </script>
+<script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbyZrT2ZZk6Ct6vrRoLAkT8h7h3_GHB3RlyfMmvEShsACIXaoH8lpOzxdq59O9oLTkys/exec';
+        const form = document.forms['hyeop-oanh'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault(); // Ngừng việc gửi form mặc định
+
+            document.getElementById('loading-container').style.display = 'flex';
+
+            // Gửi dữ liệu form đi
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu dữ liệu gửi thành công, làm mới lại form
+                        form.reset(); // Làm mới lại form
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            icon: 'success',
+                            title: '확인 완료! ',
+                            text: '답장 감사합니다. 보내주신 내용은 신랑 신부에게 잘 전달했어요!',
+                            imageWidth: 300,
+                            imageHeight: 200,
+                            confirmButtonText: '닫다',
+                            background: '#f8f8f8',
+                            padding: '20px',
+                            customClass: {
+                                popup: 'custom-popup',
+                                title: 'custom-title',
+                                confirmButton: 'custom-confirm-button'
+                            },
+                            didOpen: () => {
+                                document.querySelector('.swal2-popup').style.borderRadius = '10px'; // Bo tròn các góc
+                            }
+                        });
+                    } else {
+                        // Nếu gặp lỗi khi gửi dữ liệu
+                        console.error('Error!', response);
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            title: 'Oops!',
+                            text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                })
+                .catch(error => {
+                    // Xử lý lỗi nếu có
+                    console.error('Error!', error.message);
+
+                    document.getElementById('loading-container').style.display = 'none';
+
+                    Swal.fire({
+                        title: 'Oops!',
+                        text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                });
+        });
+</script>
+
+   <script>
+const musicCircle = document.getElementById("musicCircle");
+const audio = document.getElementById("audio");
+const videoIframe = document.getElementById("video");
+
+// Thêm sự kiện khi nhấn vào vòng tròn
+musicCircle.addEventListener("click", toggleMusic);
+
+// Hàm điều khiển việc phát hoặc tạm dừng nhạc
+function toggleMusic() {
+    if (audio.paused) {
+        audio.play(); // Phát nhạc
+        musicCircle.classList.add("spin"); // Bắt đầu xoay
+    } else {
+        audio.pause(); // Dừng nhạc
+        musicCircle.classList.remove("spin"); // Dừng xoay
+    }
+}
+
+// Tạo đối tượng YouTube Player API
+let player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video', {
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+// Lắng nghe sự kiện trạng thái của video
+function onPlayerStateChange(event) {
+    // Khi video bắt đầu phát (state = 1), dừng nhạc và dừng xoay vòng tròn
+    if (event.data === YT.PlayerState.PLAYING) {
+        if (!audio.paused) {
+            audio.pause(); // Dừng nhạc
+            musicCircle.classList.remove("spin"); // Dừng xoay vòng tròn
+        }
+    }
+}
+
+// Tải API YouTube
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+</script>
+</body>
+</html>
