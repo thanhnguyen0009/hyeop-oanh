@@ -469,7 +469,7 @@
 .btn-box {
     width: 170px;
     font-family: var(--font-gotham);
-    font-size: .55em;
+    font-size: .45em;
     color: var(--primary-color);
     font-weight: bold;
     border: 2px solid var(--primary-color);
