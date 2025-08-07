@@ -395,7 +395,6 @@
     justify-content: center;
     text-align: center;
     color: var(--primary-color);
-    margin-top: 20px;
 }
 
 .box-dot{
@@ -408,13 +407,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 100px;
     margin-bottom: 20px;
 }
 
 .img-p11{
     width: 5%;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .fa-circle{
@@ -454,7 +453,7 @@
 }
 .lb1-box1{
     font-family: var(--font-gotham);
-    font-size: .45em;
+    font-size: .3em;
     margin-top: 5px;
 }
 
@@ -465,7 +464,7 @@
 }
 
 .box-btn-top{
-    margin-bottom: 70px;
+    margin-bottom: 120px;
 }
 
 .btn-box {
@@ -475,7 +474,7 @@
     color: var(--primary-color);
     font-weight: bold;
     border: 2px solid var(--primary-color);
-    padding: 4px 10px;
+    padding: 4px 2px;
     border-radius: 10px;
     text-decoration: none;
     letter-spacing: 1px;
@@ -877,6 +876,7 @@ background-color: var(--primary-color);
  textarea {
     width: 70%;
     padding: 10px;
+    margin-top: 5px;
     font-size: .75em;
     border: 2px solid var(--primary-color);
     border-radius: 20px;
@@ -956,11 +956,31 @@ input::placeholder, textarea::placeholder{
     font-family: var(--font-gotham);
 }
 
-.img-end1{
-    width: 15%;
+.box-end-korea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0 50px;
+    background-image: url('./anh/back-end-08.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    font-family: var(--font-gotham);
+}
+
+.img-end11{
+    width: 25%;
     margin-top: 50px;
 }
 
+.img-end12{
+    width: 25%;
+    margin-top: 80px;
+}
 .lb-end1{
     font-size: .5em;
     color: #111;
@@ -994,6 +1014,19 @@ input::placeholder, textarea::placeholder{
     margin: 20px 0 40px;
     font-style: italic;
 }
+
+.p-endd{
+    text-transform: uppercase;
+    font-size: .5em;
+    color: #111;
+    padding: 0 20px;
+    text-align: justify;
+    padding: 0 20px;
+    line-height: 17px;
+    margin: 20px 0 70px;
+    font-style: italic;
+}
+
 
 .blue{
     color: var(--primary-color);
@@ -1115,6 +1148,18 @@ input::placeholder, textarea::placeholder{
     margin-bottom: 120px;
 }
 
+.qr-item11{
+    margin: 150px 0 50px;
+}
+
+.qr-item12{
+    margin: 20px 0 150px;
+}
+
+.name-qr{
+    font-weight: bolder;
+}
+
 .img-qr{
     width: 30%;
     margin-bottom: 20px;
@@ -1127,6 +1172,15 @@ input::placeholder, textarea::placeholder{
     color: #111;
     line-height: 15px;
 }
+
+.lb-qr1{
+    font-family: var(--font-gotham);
+    font-size: .8em;
+    font-weight: bold;
+    color: #111;
+    line-height: 15px;
+}
+
 
 .btn-back {
   position: fixed; /* Fixes the button in place relative to the viewport */
@@ -1175,5 +1229,12 @@ input::placeholder, textarea::placeholder{
         padding: 10px;
         font-size: .75em;
     }
+    .lb1-box1{
+        font-size: 8px;
+    }
+    .btn-box{
+        font-size: 8px;
+    }
+    
   }
   
