@@ -72,6 +72,10 @@
             </div>
             </div>
 
+             <div class="img-hoa">
+                <img src="./hyeop-oanh/anh/hoa1-01.png" alt="" class="img-hoaa">
+            </div>
+
         </div>
 
         <div class="box-p2">
@@ -160,34 +164,38 @@
 
 
     <script>
-        window.onload = function() {
-    // Lấy tất cả các phần tử cho các hiệu ứng fade-down, fade-up, fade-right, fade-left, zoom-in
-    const fadeDownElements = document.querySelectorAll('.lb1-box, .lb2-p1, .lb3-p1, .lb4-p1, .lb1-p2, .lb2-p2, .box-timeline, .lb-til');  // Các phần tử fade-down
-    const fadeUpElements = document.querySelectorAll('.lb3-p2, .lb-add, .timeline, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chuc');    // Các phần tử fade-up
-    const fadeRightElements = document.querySelectorAll('.lb1-p1, .img1');                               // Các phần tử fade-right
-    const fadeLeftElements = document.querySelectorAll('.box-nam, .img2');                                // Các phần tử fade-left
-    const zoomInElements = document.querySelectorAll('.dot-p1, .lb11-box, .img1-p2, .xacnhan');                // Các phần tử zoom-in
+window.onload = function() {
+    // Lấy tất cả các phần tử cho các hiệu ứng
+    const fadeDownElements = document.querySelectorAll('.lb1-box, .lb2-p1, .lb3-p1, .lb4-p1, .lb1-p2, .lb2-p2, .box-timeline, .lb-til');
+    const fadeUpElements = document.querySelectorAll('.lb3-p2, .lb-add, .timeline, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chuc');
+    const fadeRightElements = document.querySelectorAll('.lb1-p1, .img1');
+    const fadeLeftElements = document.querySelectorAll('.box-nam, .img2');
+    const zoomInElements = document.querySelectorAll('.dot-p1, .lb11-box, .img1-p2, .xacnhan');
 
-    // Cấu hình của IntersectionObserver
+    // Cấu hình IntersectionObserver
     const options = {
-        root: null, // Theo mặc định là viewport
-        threshold: 0.5 // Kích hoạt khi 50% phần tử hiển thị trong viewport
+        root: null, // Viewport
+        threshold: 0.2, // Kích hoạt khi 20% phần tử hiển thị
+        rootMargin: '30px' // Kích hoạt sớm hơn 30px
     };
 
-    // Tạo đối tượng IntersectionObserver để theo dõi sự xuất hiện và mất đi của phần tử
+    // Tạo IntersectionObserver
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Nếu phần tử xuất hiện trong viewport, thêm lớp "visible"
-                entry.target.classList.add('visible');
-            } else {
-                // Nếu phần tử không còn trong viewport, xóa lớp "visible"
-                entry.target.classList.remove('visible');
-            }
+            // Thêm độ trễ để giảm nhấp nháy
+            setTimeout(() => {
+                if (entry.isIntersecting) {
+                    // Thêm lớp visible khi phần tử xuất hiện
+                    entry.target.classList.add('visible');
+                } else {
+                    // Xóa lớp visible khi phần tử ra khỏi viewport
+                    entry.target.classList.remove('visible');
+                }
+            }, 100); // Độ trễ 100ms
         });
     }, options);
 
-    // Quan sát các phần tử theo từng hiệu ứng
+    // Quan sát các phần tử
     fadeDownElements.forEach(element => observer.observe(element));
     fadeUpElements.forEach(element => observer.observe(element));
     fadeRightElements.forEach(element => observer.observe(element));

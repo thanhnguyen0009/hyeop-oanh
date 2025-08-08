@@ -225,67 +225,64 @@
 
 
 /* Hiệu ứng fade-down */
-.lb1-box, .lb-inv, .lb2-p1, .lb3-p1, .lb4-p1, .lb1-p2, .lb2-p2,
- .box-timeline, .lb-til {
+.lb1-box, .lb-inv, .lb2-p1, .lb3-p1, .lb4-p1, .lb1-p2, .lb2-p2, .box-timeline, .lb-til {
     transform: translateY(-50px);
     opacity: 0;
-    transition: transform 0.5s, opacity 0.5s;
-  }
-  
-  .lb1-box.visible, .lb-inv.visible, .lb2-p1.visible, .lb3-p1.visible,
-   .lb4-p1.visible, .lb1-p2.visible, .lb2-p2.visible, .box-timeline.visible, .lb-til.visible {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.lb1-box.visible, .lb-inv.visible, .lb2-p1.visible, .lb3-p1.visible, .lb4-p1.visible, .lb1-p2.visible, .lb2-p2.visible, .box-timeline.visible, .lb-til.visible {
     transform: translateY(0);
     opacity: 1;
-  }
-  
-  /* Hiệu ứng fade-up */
-  .lb3-p2, .lb-add, .timeline, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chuc{
+}
+
+/* Hiệu ứng fade-up */
+.lb3-p2, .lb-add, .timeline, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chuc {
     transform: translateY(50px);
     opacity: 0;
-    transition: transform 0.5s, opacity 0.5s;
-  }
-  
-  .lb3-p2.visible, .lb-add.visible, .timeline.visible, .in-fe.visible, .container-check.visible, .inp-ten.visible, .lb-text.visible, #loi-chuc.visible{
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.lb3-p2.visible, .lb-add.visible, .timeline.visible, .in-fe.visible, .container-check.visible, .inp-ten.visible, .lb-text.visible, #loi-chuc.visible {
     transform: translateY(0);
     opacity: 1;
-  }
-  
-  /* Hiệu ứng fade-right */
-  .lb1-p1, .img1 {
+}
+
+/* Hiệu ứng fade-right */
+.lb1-p1, .img1 {
     transform: translateX(-50px);
     opacity: 0;
-    transition: transform 0.5s, opacity 0.5s;
-  }
-  
-  .lb1-p1.visible, .img1.visible{
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.lb1-p1.visible, .img1.visible {
     transform: translateX(0);
     opacity: 1;
-  }
-  
-  /* Hiệu ứng fade-left */
-  .box-nam, .img2 {
+}
+
+/* Hiệu ứng fade-left */
+.box-nam, .img2 {
     transform: translateX(50px);
     opacity: 0;
-    transition: transform 0.5s, opacity 0.5s;
-  }
-  
-  .box-nam.visible, .img2.visible {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.box-nam.visible, .img2.visible {
     transform: translateX(0);
     opacity: 1;
-  }
-  
-  /* Hiệu ứng zoom-in */
-  .dot-p1, .lb11-box, .img1-p2, .xacnhan{
+}
+
+/* Hiệu ứng zoom-in */
+.dot-p1, .lb11-box, .img1-p2, .xacnhan {
     transform: scale(0.5);
     opacity: 0;
-    transition: transform 0.5s, opacity 0.5s;
-  }
-  
-  .dot-p1.visible, .lb11-box.visible, .img1-p2.visible, .xacnhan.visible {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.dot-p1.visible, .lb11-box.visible, .img1-p2.visible, .xacnhan.visible {
     transform: scale(1);
     opacity: 1;
-  }
-  
+}
 
 
 
@@ -608,6 +605,12 @@ li span {
   display: block;
   font-size: 2.5rem;
   font-weight: bolder;
+}
+
+
+.img-hoaa{
+    width: 20%;
+    margin-top: 40px;
 }
 
 
@@ -943,7 +946,7 @@ input::placeholder, textarea::placeholder{
 
 .box-end{
     width: 100%;
-    height: 650px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -960,7 +963,7 @@ input::placeholder, textarea::placeholder{
 
 .box-end-korea{
     width: 100%;
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1238,6 +1241,41 @@ input::placeholder, textarea::placeholder{
     .btn-box{
         font-size: 7px;
     }
+
+    .box-end{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0 0;
+    background-image: url('./anh/back-end-08.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    font-family: var(--font-gotham);
+}
+
+.box-end-korea{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0 0;
+    background-image: url('./anh/back-end-08.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    font-family: var(--font-gotham);
+}
+
     
   }
   
