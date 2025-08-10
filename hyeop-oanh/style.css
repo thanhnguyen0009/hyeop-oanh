@@ -457,7 +457,7 @@
 
 .lb2-box1{
     font-family: var(--font-gotham);
-    font-size: .4em;
+    font-size: .5em;
     margin-top: 5px;
 }
 
@@ -502,6 +502,10 @@
     width: 100%;
 }
 
+.han{
+    font-size: 1.2em;
+}
+
 
 /* =======================P1=================== */
 
@@ -541,6 +545,12 @@
     color: #111;
     margin-top: 50px;
 }
+.lb1-p11{
+    font-family: var(--font-gotham);
+    font-size: .7em;
+    color: #111;
+    margin-top: 50px;
+}
 
 .lb2-p1{
     font-family: var(--font-mtd);
@@ -551,6 +561,12 @@
 .lb3-p1{
     font-family: var(--font-gotham);
     font-size: .5em;
+    color: #111;
+}
+
+.lb3-p11{
+    font-family: var(--font-gotham);
+    font-size: .7em;
     color: #111;
 }
 
@@ -989,6 +1005,14 @@ input::placeholder, textarea::placeholder{
 }
 .lb-end1{
     font-size: .5em;
+    color: #111;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+
+.lb-end11{
+    font-size: .7em;
     color: #111;
     line-height: 20px;
     margin-top: 20px;
