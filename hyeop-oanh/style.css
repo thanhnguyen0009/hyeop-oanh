@@ -740,15 +740,29 @@ li span {
     
 }
 
+
+.box-thamdu11 {
+    display: flex;
+    align-items: center;
+    flex: 0 0 70%; /* chiếm 70% */
+    padding-left: 10px;
+}
+
+.box-thamdu22 {
+    flex: 0 0 30%; /* chiếm 30% */
+    display: flex;
+    justify-content: flex-end; /* ảnh dồn về phải */
+}
+
 .img-xntd2{
     width: 30%;
 }
 .img-xntd22{
-    width: 100%;
+    width: 60%;
 }
 
 .img-xntd1{
-    width: 90%;
+    width: 100%;
 }
 /* ====FORM+============== */
 
