@@ -647,6 +647,15 @@ li span {
     text-transform: uppercase;
 }
 
+.lb2-p22{
+    font-family: var(--font-gotham);
+    font-size: .7em;
+    color: #111;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
 .img1-p2{
     width: 60%;
     margin-top: 30px;
