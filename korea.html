@@ -116,26 +116,26 @@
                 <img src="./hyeop-oanh/anh/flow4-08.png" alt="" class="img-xntd22">
             </div>
          </div>
-            <form action="" name="hyeop-oanh">
+            <form action="" name="hyeop-oanh-kor">
                <div class="til-label">
                     <label for="" class="lb-til1">정성껏 준비할 수 있도록 참석 여부를 알려주세요!</label>
                </div>
                 <div class="container-check">
-                    <input class="box-feed" type="radio" value="CÓ" id="yes" name="XÁC NHẬN">
+                    <input class="box-feed" type="radio" value="꼭 갈게요" id="yes" name="보내기">
                     <label class="check-box" for="yes">
                         <h3 class="til-check">꼭 갈게요</h3>
                     </label>
-                    <input class="box-feed" type="radio" value="KHÔNG" id="no" name="XÁC NHẬN">
+                    <input class="box-feed" type="radio" value="아쉽지만 어려울 것 같아요" id="no" name="보내기">
                     <label class="check-box" for="no"> 
                         <h3 class="til-check">아쉽지만 어려울 것 같아요</h3>
                     </label>
                 </div>
                 
                 <div class="box-ten">
-                    <input required class="inp-ten" type="text"  name="TÊN" placeholder="성함">
-                    <input required class="inp-ten" type="text" name="SỐ KHÁCH MỜI ĐI KÈM" placeholder="동반 인원 수" maxlength="1" title="Vui lòng nhập đúng 1 chữ số" pattern="\d" />
-                    <input required class="inp-ten" type="tel" name="SĐT" placeholder="연락처" maxlength="11" pattern="[0-9]{10}" title="Nhập đúng 10 chữ số" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
-                    <textarea id="loi-chuc" name="LỜI CHÚC" rows="4" cols="70" placeholder="신랑 신부에게 전하고 싶은 메시지"></textarea>
+                    <input required class="inp-ten" type="text"  name="성함" placeholder="성함">
+                    <input required class="inp-ten" type="text" name="동반 인원 수" placeholder="동반 인원 수" maxlength="1" title="Vui lòng nhập đúng 1 chữ số" pattern="\d" />
+                    <input required class="inp-ten" type="tel" name="연락처" placeholder="연락처" maxlength="11" pattern="[0-9]{11}" title="Nhập đúng 10 chữ số" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                    <textarea id="loi-chuc" name="소망" rows="4" cols="70" placeholder="신랑 신부에게 전하고 싶은 메시지"></textarea>
                 </div>
                 <div class="wrapper">
                     <button class="xacnhan" type="submit">보내기</button>
@@ -237,8 +237,8 @@ const main = () => {
 main();
     </script>
 <script>
-       const scriptURL = 'https://script.google.com/macros/s/AKfycbyZrT2ZZk6Ct6vrRoLAkT8h7h3_GHB3RlyfMmvEShsACIXaoH8lpOzxdq59O9oLTkys/exec';
-        const form = document.forms['hyeop-oanh'];
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbwXYWfZIw1ytSwgDOjFRe6iHFUCIoFJv0pZ-3slOLROfSvzRAxAypmwW6JPLpEDmIg/exec';
+        const form = document.forms['hyeop-oanh-kor'];
 
         form.addEventListener('submit', e => {
             e.preventDefault(); // Ngừng việc gửi form mặc định
